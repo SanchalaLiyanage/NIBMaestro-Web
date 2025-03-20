@@ -1,0 +1,114 @@
+body{ margin-top: 7rem;
+    background: rgb(26,26,63);
+    background: linear-gradient(90deg, rgba(26,26,63,0.9697128851540616) 34%, rgba(39,90,100,1) 100%);
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+.title{
+    justify-content: top;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.table table{
+    width: 100%;
+    padding: 20px;
+    /* border-collapse: collapse; */
+     border-collapse: separate;
+    border-spacing: 0 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.15);
+    overflow: hidden;
+    background-color: #7775;
+    margin-top: 2rem; 
+}
+.table  tr{
+    width: 100%;
+    background-color: #7775;
+    height: 4rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+
+}
+.table  tr:hover{
+    background-color: #7775;
+    color: white;
+}
+#row1:hover{
+    background-color: #7778;
+    color: black;
+}
+
+.table  tr:nth-child(odd){
+    background-color: #7778;
+ 
+}
+.table  th{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 25%;
+
+}
+table td{
+    font-size: 18px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%; 
+   
+}
+.filter select{
+    width: 15%;
+    height: 2rem;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #7774;
+}
+.filter label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.btn{
+    align-items: center;
+    margin-left: 1rem;
+    width: 10%;
+    height: 2rem;  
+    background-color:  rgba(245, 241, 241, 0.399);
+    font-size: 18px;
+    border: white 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 8px;
+}
+.btn:hover{
+    background-color: #7779;
+}

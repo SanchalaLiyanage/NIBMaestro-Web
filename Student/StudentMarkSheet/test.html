@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Test</title>
+</head>
+<body>
+
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav"></div>
+    
+        <script>
+            $(function() {
+                $("#nav").load("../Navigation-bar/Nav-Bar.html #nav", function() {
+                });
+            });
+        </script>
+    
+    
+</body>
+</html>
+<!-- C:\Users\Tharindu\Desktop\FINAL PROJECT\FinalProject\Student\Navigation-bar\Nav-Bar.html
+Navigation-bar\Nav-Bar.html -->
+
+<!-- <div class="navbar">
+
+   
+    <div id="nav"></div>
+
+    <script>
+        $(function() {
+            $("#nav").load("../navBarForOthers/navOthers.html #nav", function() {
+            });
+        });
+    </script>
+
+</div> -->

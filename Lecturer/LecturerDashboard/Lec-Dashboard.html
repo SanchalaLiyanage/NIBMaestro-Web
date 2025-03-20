@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      
+    <link rel="stylesheet" href="Lec-Dashboard.css">
+    <title>Lecturer's Dashboard</title>
+</head>
+<body>
+    
+    <div class="container">
+        <aside id="aside">
+            <div class="top">
+                <div class="logo">
+                    <img id="logoImg" src="Logocpy.png" style="height: 10px;width: 10px;">
+                    <h2 ><span class="danger">NIBM</span>aestro</h2>
+                </div>
+
+                <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp"> dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <!-- <a href="#">
+                    <span class="material-icons-sharp">
+                        account_circle
+                        </span>
+                    <h3>Profile</h3>
+                </a> -->
+
+                <a href="../lecmeetup/meetup.html">
+                    <span class="material-icons-sharp">
+                        notifications
+                        </span>
+                    <h3>MeetUp</h3>
+                    <!-- <span class="message-count">26</span> -->
+                </a>
+
+                <a href="../LecturerSubmitionAdd/Lecturesubmitionadd.html">
+                    <span class="material-icons-sharp">
+                        event
+                        </span>
+                    <h3>Add submission</h3>
+                </a>
+
+                <a href="../To-do list/Lec-todo.html">
+                    <span class="material-icons-sharp">
+                        format_list_bulleted
+                        </span>
+                    <h3>To-do List</h3>
+                </a>
+                <a href="../Lecturer-studentmarkView/studentmarkview.html">
+                    <span class="material-icons-sharp">
+                        description
+                        </span>
+                    <h3>View Result</h3>
+                </a>
+
+                <!-- <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                        </span>
+                    <h3>Setting</h3>
+                </a> -->
+
+                <a href="../../Welcome/Welcome.html" id="LogOut">
+                    <span class="material-icons-sharp">
+                        logout
+                        </span>
+                    <h3>Logout</h3>
+                </a>
+
+               
+            </div>   
+        </aside>
+
+        <!-- Main Start from here -->
+    
+    <main>
+        <h1>Dashboard</h1>
+
+        <div class="insights">
+            <div class="WelcomeMSG">
+                <h2> Welcome to NIBM Maestro</h2>
+                <p>Welcome to the creative realm of education, where your passion meets our pursuit of knowledge. Ready to redefine what's possible? Let's inspire and innovate together, dear educators!</p>
+
+            </div>
+        </div>
+
+        <div class="Modules" id="mod123" value="222">
+            <div id="teamview">
+                <h2> Notifications</h2>
+            
+            </div>
+            <div class="teamupdate">
+                <!-- <table>
+                    <tr>
+                        <td class="m1">
+                            <td  class="c1"><h2>Course :</h2></td>
+                            <td class="c2"> <h3 id="course">Computer science</h3></td>
+                        </td>
+                        <td class="m1">
+                            <td class="c1"><h2>Batch :</h2></td>
+                            <td class="c2"> <h3 id="batch">2021</h3></td>
+                        </td>
+                    </tr>
+                </table>
+               <div>
+                    <table>
+                        <tr>
+                            <td class="m1"><h2>Title</h2></td>
+                            <td class="cd1"><h3 id="title">Join a team or create your own to collaborate with your peers on projects, assignments, and more</h3></td>
+                        </tr>
+                    </table>
+               </div>
+                 -->
+
+            </div>
+       
+        
+        </div>
+    </main>
+    
+
+        <!-- END OF MAIN -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                        </span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode </span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <small class="text-muted">Lecturer</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="Colorful Illustrative Male Discord Avatar.png" >
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Of Top -->
+        <div class="wrapper">
+            <div class="container-calendar">
+            <div id="right">
+                <h3 id="monthAndYear"></h3>
+                <div class="button-container-calendar">
+                    <button id="previous"
+                            onclick="previous()">
+                          ‹
+                      </button>
+                    <button id="next"
+                            onclick="next()">
+                          ›
+                      </button>
+                </div>
+                <table class="table-calendar"
+                       id="calendar"
+                       data-lang="en">
+                    <thead id="thead-month"></thead>
+                    <!-- Table body for displaying the calendar -->
+                    <tbody id="calendar-body"></tbody>
+                </table>
+                <div class="footer-container-calendar">
+                    <label for="month">Jump To: </label>
+                    <!-- Dropdowns to select a specific month and year -->
+                    <select id="month" onchange="jump()">
+                        <option value=0>Jan</option>
+                        <option value=1>Feb</option>
+                        <option value=2>Mar</option>
+                        <option value=3>Apr</option>
+                        <option value=4>May</option>
+                        <option value=5>Jun</option>
+                        <option value=6>Jul</option>
+                        <option value=7>Aug</option>
+                        <option value=8>Sep</option>
+                        <option value=9>Oct</option>
+                        <option value=10>Nov</option>
+                        <option value=11>Dec</option>
+                    </select>
+                    <!-- Dropdown to select a specific year -->
+                    <select id="year" onchange="jump()"></select>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="AddingFuntions">
+            <div class="ModuleAdding">
+                <h3>Modules</h3>
+            </div>
+            <div class="Add">
+                <span class="material-icons-sharp">
+                    add
+                    </span>
+                    <h3><a href="#">Add Module</a></h3>
+
+            </div>
+        </div>
+        
+        </div>    
+    </div>
+    <script src="Lec-Dashboard.js"></script>
+    
+</body>
+</html>

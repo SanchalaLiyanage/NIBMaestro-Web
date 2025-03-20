@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    
+    <link rel="stylesheet" href="lecadd.css">
+    <script src="lecadd.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+    <!-- <script src="js/navBar.js"></script> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <div class="navbar123">
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav123"></div>
+    
+    
+    </div>
+</header>
+<body>
+
+   
+
+    <div class="profile-container">
+        <h1>Account Settings</h1>
+        <div class="content">
+            <div class="profile-image">
+                <img src="" id="profilePreview" alt="Profile Image">
+                <div class="selection">
+                    <label for="newProfile">Select new profile</label>
+                    <input type="file" name="profile" id="newProfile">
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="name info-row">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" class="input-feild">
+                </div>
+                <!-- <div class="nic info-row">
+                    <label for="nic">NIC: </label>
+                    <input type="text" name="nic" id="nic" class="input-feild">
+                </div> -->
+                <div class="email info-row">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" class="input-feild">
+                </div>
+                <div class="password info-row">
+                    <label for="password">Password: </label>
+                    <input type="text" name="password" id="psswd" class="input-feild">
+                </div>
+                <!-- <div class="phone info-row">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" class="input-feild">
+                </div> -->
+                <!-- <div class="sex info-row">
+                    <label for="sex">Sex</label>
+                    <select name="Sex" id="sex" class="input-feild">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div> -->
+                <!-- <div class="dob info-row">
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" name="dob" id="dob" class="input-feild">
+                </div> -->
+                <div class="address inxfo-row">
+                    <label for="address">Description: </label>
+                    <textarea name="address" id="address" cols="30" rows="10" class="input-feild"></textarea>
+                </div>
+                <!-- <div class=" info-row" >
+                    <label for="interest">Batch </label>
+                    <div class="interest">
+                        <select title="cat-list1-cmb" name="cat-list1-cmb" id="batch" class="cat-cmb" class="input-feild">
+                            <option value="">--select-1--</option>
+                        </select>
+                    </div>
+                <div class="interest-cat info-row" >
+                    <label for="interest">Course </label>
+                    <div class="interest">
+                        <select title="cat-list1-cmb" name="cat-list1-cmb" id="course" class="cat-cmb" class="input-feild">
+                            <option value="">--select-1--</option>
+                            
+                        </select> -->
+                    <!-- </div>
+                    <div class="interest-cat info-row">
+                        <label for="interest">Index </label>
+                        <div class="interest">
+                            <select title="cat-list1-cmb" name="cat-list1-cmb" id="index" class="cat-cmb" class="input-feild">
+                                <option value="">--select-1--</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="btns">
+            <button id="btn-save">Save changes</button>
+            <button id="btn-cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

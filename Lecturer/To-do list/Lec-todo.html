@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Lec-todo.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <img class="LogoImg" src="Logocpy.png">
+        
+
+        <input type="checkbox" id="check">
+           <label for="check" class="icons">
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+
+           </label>
+
+        <nav class="navbar">
+
+                <a href="#" style="--i:0;">Dashboard</a>
+                <a href="#" style="--i:1;">About Us</a>
+                <a href="#" style="--i:2;">Contact Us</a>
+                <a href="#" style="--i:3;">Profile</a>
+        </nav>
+
+</header>
+
+
+    
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List</h2>
+            <h4><center>"Empower your academic journey with organized efficiency.."</center></h4>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button onclick="addTask()">Add</button>
+                </div>
+
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> 
+                    <li>Task 4</li> -->
+
+                </ul>
+
+        </div>
+           
+    </div>
+   
+    <script src="Lec-todo.js"></script>
+
+</body>
+</html>

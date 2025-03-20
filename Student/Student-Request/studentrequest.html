@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student requst</title>
+    <link rel="stylesheet" href="studentrequest.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="studentrequest.js"></script>
+</head>
+<header>
+    <div class="navbar123">
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav123"></div>
+    
+    
+    </div>
+</header>
+<body>
+    <div class="main">
+        <div id="addRequest">
+            
+                <div class="title">
+                    <h3>Make your request</h3>
+                </div>
+                <div id="requestwrite1" class="requestwrite">
+                    <textarea id="textareaRequest" class="textrequest" placeholder="Enter your request"></textarea>
+                </div>
+                    <div class="btn">
+                        <button class="btnrequest" id="btnrequest">Request</button>
+                        <button class="btnrequest" id="btnback">Back</button>
+                    </div>
+             </div>
+        </div>
+        
+        <div id="viewRequest">
+            
+                <div class="title">
+                    <h3>Your request</h3>
+                </div>
+
+                <div class="requestwrite">
+                    <label  class="textrequest">
+                        <div> <h3 id="view-label"></h3> </div>
+                        <div><h3 id="view-lable1"></h3></div>
+                        <div><h4 id="view-lable2"></h4></div>
+                        <div><h3 id="view-lable3"></h3></div>
+                        <div><h4 id="view-lable4"></h4></div>
+                       
+                        
+                    </label>          
+                </div>   
+        </div>
+
+
+        
+
+    </div>
+    <div class="logsheet">
+        <h1>Log sheet</h1>
+        <div id="tablediv" class="container">
+       
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <div class="heading">
+                            <h1>Log Sheet</h1>
+                        </div>
+                        
+                    </tr>
+                    <tr id="title">
+                        <th id="number">Meeting Number</th>
+                        <th>Date</th>
+                        <th>team Members</th>
+                        <th>Comment</th>
+                        <th>Next Target</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2024/03/02</td>
+                            <td>aaaa<br>bbb<br>ccc</td>
+                            <td>achieve all traget</td>
+                            
+                            <td>finalize report</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2024/01/02</td>
+                            <td>aaaa<br>bbb<br>ccc</td>
+                            <td>achieve all traget</td>
+                       
+                            <td>finalize ER</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2024/02/02</td>
+                            <td>aaaa<br>bbb<br>ccc</td>
+                            <td>50%</td>
+                         
+                            <td>ER report</td>
+                        </tr>
+            </table> -->
+          
+        </div>
+    </div>
+
+    
+</body>
+</html>

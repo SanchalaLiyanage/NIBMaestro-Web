@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Mark Page</title>
+    <link rel="stylesheet" href="AddMarks.css">
+    <script src="Addmark.js"></script>
+</head>
+<header>
+    <div class="navbar123">
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav123"></div>
+    
+    
+    </div>
+</header>
+<body>
+    <div class="main" id="marks">
+        <div class="title">
+            <h1>Student Mark Sheet</h1>
+        </div>
+        <div class="filter">
+            <label for="viva">Viva</label>
+            <select name="viva" id="viva">
+                <option value="">select the Viva</option>
+             
+            </select>
+
+            <label for="team">Team</label>
+            <select name="team" id="team">
+                <option value="">select the Team</option>
+             
+            </select>
+            
+           
+            
+            <button class="btn" id="btnfilter">Filter</button>
+        </div>
+        <div class="table">
+            <table>
+                <tr id="row1"  >
+                    <th class="clm1" >Student ID</th>
+                    <th class="clmname">Student Name</th>
+                    <th>Individual Marks</th>
+                    <th class="com4">Comment</th>
+                    <th class="clm2">update</th>
+                </tr>
+                <tr onclick="popupwindow()">
+                    <td class="clm1">1</td>
+                    <td class="clmname">Student 1</td>
+                    <td><input type="text" id="INmark2">  </td>
+                    <td><input type="text"></td>
+                    <td class="clm2"><button  class="btnup">update</button></td>
+                </tr>
+                <tr>
+                    <td class="clm1">2</td>
+                    <td class="clmname">Student 2</td>
+                    <td><input type="text" id="INmark3"></td>
+                    <td><input type="text"></td>
+                    <td class="clm2"><button class="btnup">update</button></td>
+                </tr>
+                <tr>
+                    <td class="clm1">3</td>
+                    <td class="clmname">Student 3</td>
+                    <td><input type="text" id="INmark3"></td>
+                    <td><input type="text"></td>
+                    <td class="clm2"><button class="btnup" >update</button></td>
+                </tr>
+                <tr>
+                    <td class="clm1">4</td>
+                    <td class="clmname">Student 4</td>
+                    <td><input type="text" id="INmark4"></td>
+                    <td><input type="text"></td>
+                    <td class="clm2"><button class="btnup" >update</button></td>
+                </tr>
+            </table>
+
+        </div>
+
+  
+
+
+    </div>
+    
+</body>
+</html>

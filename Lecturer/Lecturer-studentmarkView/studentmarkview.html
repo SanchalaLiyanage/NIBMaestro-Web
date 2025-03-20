@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Student Mark view</title>
+    <link rel="stylesheet" href="studentmarkview.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="studentmarkview.js"></script>
+</head>
+<header>
+    <div class="navbar123">
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav123"></div>
+    
+    
+    </div>
+</header>
+<body>
+    <div class="main" id="marks">
+        <div class="title">
+            <h1>Student Mark Sheet</h1>
+        </div>
+        <div class="filter">
+            <label for="course">Course</label>
+            <select name="course" id="course">
+                <option value="">Select</option>
+                </select>
+
+            </select>
+            <label for="batch">Batch</label>
+            <select name="batch" id="batch">
+                <option value="">Select</option>
+            </select>
+
+            <label for="index">Index</label>
+
+            <select name="index" id="index">
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            
+            <button class="btn" id="btnfilter">Filter</button>
+        </div>
+        <div class="table" id="tdiv">
+            <!-- <table>
+                <tr id="row1"  >
+                    <th class="clm1">Student ID</th>
+                    <th class="clmname">Student Name</th>
+                    <th>Team Marks</th>
+                    <th>Individual Marks</th>
+                    <th>Total Marks</th>
+                    <th class="clm2">Grade</th>
+                </tr>
+                <tr >
+                    <td class="clm1">1</td>
+                    <td class="clmname"></td>
+                    <td></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td class="clm2"></td>
+                </tr>
+               
+                </tr>
+            </table> -->
+
+        </div>
+
+  
+
+
+    </div>
+
+    <!-- pop up table/ singele student mark table -->
+
+    <div class="main" id="popup" >
+        <div class="title">
+            <h1>Student Mark Sheet</h1>
+        </div>
+        <div class="filter">
+            <label class="qq">Student Name:</label>
+            <label class="rply" id="stname">Student 1</label>
+
+            <label class="qq">Student ID: </label>
+            <label class="rply" id="stindex">1</label>
+
+            <label class="qq">Total:</label>
+            <label class="rply" id="sttot">30</label>
+
+            <label class="qq">Grade:</label>
+            <label class="rply" id="stgrade">A</label>
+            
+        </div>
+        <div class="table">
+            <table>
+                <tr id="row1">
+                    <th class="clm1">Task Number</th>
+                    <th class="clmname">Task Name</th>
+                    <th>Team Mark</th>
+                    <th>Individual Mark</th>
+                    <th>Total Mark</th>
+                    <th class="clm2">Grade</th>
+                </tr>
+                <tr>
+                    <td class="clm1">1</td>
+                    <td class="clmname">Task 1</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td class="clm2">A</td>
+                </tr>
+                <tr>
+                    <td class="clm1">2</td>
+                    <td class="clmname">Task 2</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td class="clm2">A</td>
+                </tr>
+                <tr>
+                    <td class="clm1">3</td>
+                    <td class="clmname">Task 3</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td class="clm2">A</td>
+                </tr>
+                <tr>
+                    <td class="clm1">4</td>
+                    <td class="clmname">Task 4</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td class="clm2">A</td>
+                </tr>
+            </table>
+            <button class="btnpop" id="btnclose" >Close</button>
+        </div>
+            
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student requst</title>
+    <link rel="stylesheet" href="lecrply.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="lecrply.js"></script>
+</head>
+<header>
+    <div class="navbar123">
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav123"></div>
+    
+    
+    </div>
+</header>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>Messages</h2>
+        </div>
+        <div class="basic">
+            <div class="table">
+                <table>
+                    <tr>
+                        <td class="clm1">Course</td>
+                        <td class="clm2" id="course">1</td>
+                    </tr>
+                    <tr>
+                        <td class="clm1">Batch</td>
+                        <td class="clm2" id="batch">1</td>
+                    </tr>
+                    <tr>
+                        <th  class="clm1">Group</th>
+                        <th class="clm2" id="groupname" >group1</th>
+                    </tr>
+                    <tr>
+                        <td class="clm1">Group Number</td>
+                        <td class="clm2" id="groupnumber">1</td>
+                    </tr>
+                    <tr>
+                        <td class="clm1">Date of Message Send</td>
+                        <td class="clm2" id="date">2021-09-20</td>
+                    <tr>
+                        <td class="clm1">Message</td>
+                        <td class="clm2" id="message" >Hi, I am a student from group 1. I have a question regarding the assignment. Can you please help me?</td>
+                    </tr>
+                </table>
+
+
+            </div>
+            <div class="rplybtn">
+                <button id="appsetbtn" class="add">Accept</button>
+                <button id="rejectbtn" class="add">Reject</button>
+            </div>
+        </div>
+        <div class="rply">
+            <div class="title1">
+                <h3>Addiional</h3>
+            </div>
+            <div class="title2">
+                <h3>Reply</h3>
+            <div id="requestwrite1" class="requestwrite">
+                <textarea id="textareaRequest" class="textrequest" placeholder="Enter your request"></textarea>
+            </div>
+            <div class="rplybtn">
+                <button id="sendbtn" class="add">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

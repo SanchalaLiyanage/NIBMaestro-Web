@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Submition Add page</title>
+    <link rel="stylesheet" href="Lecturesubmitionadd.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Lecturesubmitionadd.js"></script>
+
+</head>
+<header>
+    <div class="navbar123">
+
+        <!-- getting navbar from Other file use ID(nav)-->
+        <div id="nav123"></div>
+    
+    
+    </div>
+</header>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Lecturer Submition Add</h1>
+        </div>
+    
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td class="clm1">Course</td>
+                    <td class="clm2">
+                        <select class="combo" id="course" name="course">
+                            <option value="">Select Course</option>
+                          
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clm1">Batch</td>
+                    <td class="clm2">
+                        <select class="combo" id="batch" name="batch">
+                            <option value="">Select Batch</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clm1">Title</td>
+                    <td class="clm2">
+                        <input type="text" id="title" name="title">
+                    </td>            
+                </tr>
+                <tr>
+                    <td class="clm1">Description</td>
+                    <td class="clm2">
+                        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clm1">Deadline</td>
+                    <td class="clm2">
+                        <input type="date" id="deadline" name="deadline">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clm1">Marks Allocated for</td>  
+                    <td class="clm2">
+                        <select class="combo" id="marksAllocated" name="marksAllocated">
+                            <option value="">Select</option>
+                            <option value="Team">team</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </td>  
+                </tr>
+            
+            
+                        
+
+                    <tr>
+                        <td class="clm1">file</td>
+                        <td class="clm2" id="filecol">
+                            <label for="input-file" id="drop-area" >
+                              <input type="file"  id="input-file" hidden >
+                              <div id="img-view">
+                                <img src="Icon/upload.png" height="70px">
+                                <p>Drag and Drop or click here to upload file here</p>
+                                <span>Choose any file from your Desktop</span>
+                              </div>
+                            </label></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="btnpanel">
+            <button class="btn" id="addsubmit">Add</button>
+            <button class="btn" id="btnback">Back</button>
+    </div>
+    
+</body>
+</html>

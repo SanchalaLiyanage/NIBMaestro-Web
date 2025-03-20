@@ -1,0 +1,177 @@
+* {
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background: rgb(4,39,62);
+    background: linear-gradient(180deg, rgba(4,39,62,1) 2%, rgba(16,68,95,1) 10%, rgba(31,89,101,1) 17%, rgba(40,96,105,1) 20%, rgba(9,74,85,1) 25%, rgba(3,70,85,1) 33%, rgba(5,51,61,1) 41%, rgba(4,53,64,1) 49%, rgba(3,47,65,1) 56%, rgba(11,55,66,1) 75%, rgba(3,56,65,1) 83%, rgba(7,65,79,1) 90%, rgba(5,79,81,1) 95%);
+    
+}
+
+.profile-container{
+    font-size: 0.9rem;
+    margin-top: 4.5rem;
+    padding: 1rem 1rem;
+    /* background-color: #7778; */
+    
+}
+
+.profile-container h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.profile-container .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 1rem;
+    padding: 0rem 3rem;
+    /* background-color: #7778; */
+
+}
+
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1rem;
+    /* background-color: rgba(241, 149, 0, 0.059); */
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 1px 1px 18px rgba(23, 30, 64, 0.3);
+    background-color: #7778;
+
+}
+
+.profile-image img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    text-align: center;
+    color: red;
+}
+
+.profile-image .selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image .selection input{
+    display: none;
+}
+
+.profile-image .selection label{
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(23, 30, 64);
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #7778;
+}
+
+
+.user-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 5rem);
+    width: 55rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    padding: 0.2rem 2rem;
+    background-color: #7778;
+    border-radius: 18px;
+    /* justify-items: center; */
+}
+
+.user-info .info-row{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.user-info .info-row input, 
+.user-info .sex select{
+    padding: 0.5rem 1rem;
+    width: 22rem;
+    border: 1px solid rgb(23, 30, 64);
+    border-radius: 0.6rem;
+    background-color: white;
+}
+
+.user-info .address textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    grid-column: 2;
+    grid-row: span 2;
+    height: 6rem;
+    width: 22rem;
+    border: 1px solid rgb(23, 30, 64);
+    border-radius: 0.6rem;
+    background-color: white;
+    padding: 0.3rem 0.3rem;
+}
+
+.user-info .info-row select{
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(23, 30, 64);
+    border-radius: 0.6rem;
+}
+
+.user-info .interest-cat{
+    grid-column: span 2;
+    justify-self: start;
+    gap: 1rem;
+}
+
+.user-info .interest-cat .interest{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btns button{
+    padding: 0.7rem 1.5rem;
+    /* width: 10rem; */
+    border: none;
+    border-radius: 1.2rem;
+    background-color: rgb(23, 30, 64);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+ 
+    .profile-image img{
+        width: 13rem;
+        height: 13rem;
+        display: none;
+    }
+
+}
+
+@media (max-width: 425px){
+    .profile-image img{
+        display: flex;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+

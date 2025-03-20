@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="LoginStudent.css" rel="Stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+   <!-- Ajax jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   
+    <script src="LoginStudentValidation.js"></script>
+
+    <title>LoginPage</title>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <div>
+                
+                <h2>Login As a Student</h2>
+                <div class="input-group">
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-email">Email</label>   
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" name="login-password" required>
+                    <img src="eye-open.png"id="Leye-open">
+                   
+                    <label for="login-password">Password</label>
+                </div>
+                <div class="remember">
+                    <label for=""><input type="checkbox">Remember me</label>
+                </div>
+                <button  id="btn-Login">Login</button>
+                <div class="signUp-link">
+                    <p>Don't have an account?  <a href="#" class="signUpBtn-link">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-wrapper sign-up">
+            
+            <div>
+                <h2>Sign Up As a Student</h2>
+                <div class="input-group">
+                    <input type="text" id="register-UserName" name="UserName" required>
+                    <label for="UserName">Username </label>   
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="register-Email" name="Email" required>
+                    <label for="Email">Email</label>   
+                </div>
+                <div class="input-group">
+                    <input type="password" id="register-Password" name="Password" required>
+                    <img src="eye-open.png"id="Reye-open">
+                    
+                    <label for="Password">Password</label>
+
+                </div>
+                <div >
+                    
+                    <label class="selectlable" for="course">Course</label>
+                    <select id="course" >
+                          <option value="">Select Your Course</option>
+                   
+                    </select>
+                </div>
+                <div >
+                    <label class ="selectlable" for="batch">Batch</label>
+
+                   <select id="batch">
+                          <option class="selectvalue" value="">Select Your Batch</option>
+                       
+                   
+                </div>
+                <div >
+                    
+                    <label class="selectlable" for="course">Course</label>
+                    <select id="course" >
+                          <option value="">Select Your Course</option>
+                   
+                    </select>
+                </div>
+                <div >
+                   
+                    <label class ="selectlable"  for="index">Index Number</label>
+                    <select id="index">
+                          <option value="">Select Your Index Number</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="remember">
+                    <label for=""><input id="register-check" type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button id="btn-Register" >Sign Up</button>
+                <div class="signUp-link">
+                    <p>Already have an account?  <a href="#" class="signInBtn-link">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="LoginStudent.js"></script> -->
+
+</body>
+</html>

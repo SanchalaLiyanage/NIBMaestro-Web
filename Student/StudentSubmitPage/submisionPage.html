@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="submit.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="submit.js"></script>
+ 
+</head>
+<header>
+  <div class="navbar123">
+
+      <!-- getting navbar from Other file use ID(nav)-->
+      <div id="nav123"></div>
+  
+  
+  </div>
+</header>
+<body>
+   
+    <div class="main">
+        <h1 class="title">Submit Your Work</h1>
+        <div class="submit">
+          <div class="up">
+            <table>
+                <tr>
+                   <td><h3>Task Name-:</h3><td>
+                    <td><label id="taskname"></label></td>
+                </tr> 
+
+                <tr>
+                    <td><h3>The date Submission is created-:</h3></h3>
+                    <td><label id="subdate"></label></td>
+                </tr>
+                <tr>
+                    <td><h3>Submission Deadline-:</h3></td>
+                    <td><label id="deadline" ></label></td>
+                </tr>
+                <tr>
+                    <td><h3>Submission Time-:</h3></td>
+                    <td><label id="time"></label></td>
+                </tr>
+                <tr>
+                    <td><h3>Note-:</h3></td>
+                    <td><label id="note"></label></td>
+                </tr>
+                <tr>
+                    <td><h3>Document</h3>
+                    <td id="docview"><button id="btndown"><img src="../StudentMarkSheet/Icon/pdf.png"></button></td>
+                </tr>            
+
+            </table>
+
+    
+          </div>
+          <!-- <div> -->
+         
+                <label for="input-file" id="drop-area" >
+                  <input type="file"  id="input-file" hidden >
+                  <div id="img-view">
+                    <img src="Icon/upload.png" height="70px">
+                    <p>Drag and Drop or click here to upload file here</p>
+                    <span>Choose any file from your Desktop</span>
+                  </div>
+                </label>
+        <!-- </div> -->
+        
+        </div>
+        
+    </div> 
+    <div class="button">
+      <button id="btnsubmit">Submit</button>
+
+      <button id="btnback" >Back</button>
+    </div>
+   
+    
+</body>
+</html>
